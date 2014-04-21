@@ -21,7 +21,6 @@
 		08CE788F19049FEF0096C157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786B19049FEF0096C157 /* Foundation.framework */; };
 		08CE789019049FEF0096C157 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786F19049FEF0096C157 /* UIKit.framework */; };
 		08CE789819049FEF0096C157 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08CE789619049FEF0096C157 /* InfoPlist.strings */; };
-		08CE789A19049FEF0096C157 /* SoundCloudSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE789919049FEF0096C157 /* SoundCloudSearchTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		08CE788D19049FEF0096C157 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		08CE789519049FEF0096C157 /* SoundCloudSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudSearchTests-Info.plist"; sourceTree = "<group>"; };
 		08CE789719049FEF0096C157 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		08CE789919049FEF0096C157 /* SoundCloudSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCloudSearchTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 		08CE789319049FEF0096C157 /* SoundCloudSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				08CE789919049FEF0096C157 /* SoundCloudSearchTests.m */,
 				08CE789419049FEF0096C157 /* Supporting Files */,
 			);
 			path = SoundCloudSearchTests;
@@ -263,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08CE789A19049FEF0096C157 /* SoundCloudSearchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +466,7 @@
 				08CE789F19049FEF0096C157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08CE78A019049FEF0096C157 /* Build configuration list for PBXNativeTarget "SoundCloudSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +475,7 @@
 				08CE78A219049FEF0096C157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
