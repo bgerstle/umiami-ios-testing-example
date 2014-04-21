@@ -18,12 +18,24 @@
 		08CE788F19049FEF0096C157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786B19049FEF0096C157 /* Foundation.framework */; };
 		08CE789019049FEF0096C157 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786F19049FEF0096C157 /* UIKit.framework */; };
 		08CE789819049FEF0096C157 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08CE789619049FEF0096C157 /* InfoPlist.strings */; };
+		08CE78A81904B3DD0096C157 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE788D19049FEF0096C157 /* XCTest.framework */; };
+		08CE78A91904B3DD0096C157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786B19049FEF0096C157 /* Foundation.framework */; };
+		08CE78AA1904B3DD0096C157 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786F19049FEF0096C157 /* UIKit.framework */; };
+		08CE78B01904B3DD0096C157 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08CE78AE1904B3DD0096C157 /* InfoPlist.strings */; };
+		08CE78B21904B3DD0096C157 /* SoundCloudSearchLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE78B11904B3DD0096C157 /* SoundCloudSearchLogicTests.m */; };
 		D21F7E9D7015464C8D21E31C /* libPods-SoundCloudSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B713CEDC42414416BA9AF4F5 /* libPods-SoundCloudSearchTests.a */; };
 		FC6085EAEDDF45C3B088BFE9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3536102E93B34F5194C8F38D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		08CE789119049FEF0096C157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08CE786019049FEF0096C157 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CE786719049FEF0096C157;
+			remoteInfo = SoundCloudSearch;
+		};
+		08CE78B41904B3DD0096C157 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08CE786019049FEF0096C157 /* Project object */;
 			proxyType = 1;
@@ -48,6 +60,11 @@
 		08CE788D19049FEF0096C157 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		08CE789519049FEF0096C157 /* SoundCloudSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudSearchTests-Info.plist"; sourceTree = "<group>"; };
 		08CE789719049FEF0096C157 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08CE78A71904B3DD0096C157 /* SoundCloudSearchLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCloudSearchLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CE78AD1904B3DD0096C157 /* SoundCloudSearchLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudSearchLogicTests-Info.plist"; sourceTree = "<group>"; };
+		08CE78AF1904B3DD0096C157 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08CE78B11904B3DD0096C157 /* SoundCloudSearchLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCloudSearchLogicTests.m; sourceTree = "<group>"; };
+		08CE78B31904B3DD0096C157 /* SoundCloudSearchLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundCloudSearchLogicTests-Prefix.pch"; sourceTree = "<group>"; };
 		3536102E93B34F5194C8F38D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1FA9C4C1FE4B9D9278B0B5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B713CEDC42414416BA9AF4F5 /* libPods-SoundCloudSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoundCloudSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +94,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08CE78A41904B3DD0096C157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CE78A81904B3DD0096C157 /* XCTest.framework in Frameworks */,
+				08CE78AA1904B3DD0096C157 /* UIKit.framework in Frameworks */,
+				08CE78A91904B3DD0096C157 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +112,7 @@
 			children = (
 				08CE787119049FEF0096C157 /* SoundCloudSearch */,
 				08CE789319049FEF0096C157 /* SoundCloudSearchTests */,
+				08CE78AB1904B3DD0096C157 /* SoundCloudSearchLogicTests */,
 				08CE786A19049FEF0096C157 /* Frameworks */,
 				08CE786919049FEF0096C157 /* Products */,
 				7B1FA9C4C1FE4B9D9278B0B5 /* Pods.xcconfig */,
@@ -97,6 +125,7 @@
 			children = (
 				08CE786819049FEF0096C157 /* SoundCloudSearch.app */,
 				08CE788C19049FEF0096C157 /* SoundCloudSearchTests.xctest */,
+				08CE78A71904B3DD0096C157 /* SoundCloudSearchLogicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +182,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		08CE78AB1904B3DD0096C157 /* SoundCloudSearchLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				08CE78B11904B3DD0096C157 /* SoundCloudSearchLogicTests.m */,
+				08CE78AC1904B3DD0096C157 /* Supporting Files */,
+			);
+			path = SoundCloudSearchLogicTests;
+			sourceTree = "<group>";
+		};
+		08CE78AC1904B3DD0096C157 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08CE78AD1904B3DD0096C157 /* SoundCloudSearchLogicTests-Info.plist */,
+				08CE78AE1904B3DD0096C157 /* InfoPlist.strings */,
+				08CE78B31904B3DD0096C157 /* SoundCloudSearchLogicTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +243,24 @@
 			productReference = 08CE788C19049FEF0096C157 /* SoundCloudSearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		08CE78A61904B3DD0096C157 /* SoundCloudSearchLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CE78B61904B3DD0096C157 /* Build configuration list for PBXNativeTarget "SoundCloudSearchLogicTests" */;
+			buildPhases = (
+				08CE78A31904B3DD0096C157 /* Sources */,
+				08CE78A41904B3DD0096C157 /* Frameworks */,
+				08CE78A51904B3DD0096C157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08CE78B51904B3DD0096C157 /* PBXTargetDependency */,
+			);
+			name = SoundCloudSearchLogicTests;
+			productName = SoundCloudSearchLogicTests;
+			productReference = 08CE78A71904B3DD0096C157 /* SoundCloudSearchLogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,6 +290,7 @@
 			targets = (
 				08CE786719049FEF0096C157 /* SoundCloudSearch */,
 				08CE788B19049FEF0096C157 /* SoundCloudSearchTests */,
+				08CE78A61904B3DD0096C157 /* SoundCloudSearchLogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CE789819049FEF0096C157 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CE78A51904B3DD0096C157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CE78B01904B3DD0096C157 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +403,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08CE78A31904B3DD0096C157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CE78B21904B3DD0096C157 /* SoundCloudSearchLogicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -335,6 +418,11 @@
 			isa = PBXTargetDependency;
 			target = 08CE786719049FEF0096C157 /* SoundCloudSearch */;
 			targetProxy = 08CE789119049FEF0096C157 /* PBXContainerItemProxy */;
+		};
+		08CE78B51904B3DD0096C157 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CE786719049FEF0096C157 /* SoundCloudSearch */;
+			targetProxy = 08CE78B41904B3DD0096C157 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,6 +439,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				08CE789719049FEF0096C157 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08CE78AE1904B3DD0096C157 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08CE78AF1904B3DD0096C157 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -500,6 +596,42 @@
 			};
 			name = Release;
 		};
+		08CE78B71904B3DD0096C157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCloudSearchLogicTests/SoundCloudSearchLogicTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SoundCloudSearchLogicTests/SoundCloudSearchLogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		08CE78B81904B3DD0096C157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCloudSearchLogicTests/SoundCloudSearchLogicTests-Prefix.pch";
+				INFOPLIST_FILE = "SoundCloudSearchLogicTests/SoundCloudSearchLogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -529,6 +661,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		08CE78B61904B3DD0096C157 /* Build configuration list for PBXNativeTarget "SoundCloudSearchLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CE78B71904B3DD0096C157 /* Debug */,
+				08CE78B81904B3DD0096C157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
