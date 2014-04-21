@@ -4,7 +4,9 @@ platform :ios, "7.0"
 pod 'RequestUtils'
 pod 'RXPromise'
 
-target "SoundCloudSearchTests" do
+target :tests  do
+  link_with 'SoundCloudSearchTests'
+  link_with 'SoundCloudSearchLogicTests'
   pod 'OCMock'
 end
 
