@@ -1,1 +1,16 @@
+PODS:
+  - OCMock (2.2.4)
+  - RequestUtils (1.0.2)
+  - RXPromise (0.12.0)
+
+DEPENDENCIES:
+  - OCMock
+  - RequestUtils
+  - RXPromise
+
+SPEC CHECKSUMS:
+  OCMock: 5008fae4b4789b8fc3e48cd7660f2eb5ef8ce89e
+  RequestUtils: a21a610c663a9c6c710a5ed8e16396a13dd42ee6
+  RXPromise: d5b80b17dee7c9360e7be2ec140f74667855f7ac
+
 COCOAPODS: 0.32.1

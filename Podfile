@@ -1,11 +1,10 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, "6.0"
+platform :ios, "7.0"
 
-target "SoundCloudSearch" do
-
-end
+pod 'RequestUtils'
+pod 'RXPromise'
 
 target "SoundCloudSearchTests" do
-
+  pod 'OCMock'
 end
 
