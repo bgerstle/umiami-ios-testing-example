@@ -8,11 +8,19 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate ()
+@property (strong, nonatomic) UITabBarController *rootTabController;
+@end
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    _rootTabController = [[UITabBarController alloc] init];
+    _window.rootViewController = _rootTabController;
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 							

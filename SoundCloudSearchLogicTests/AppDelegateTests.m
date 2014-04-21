@@ -7,9 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
 #import "AppDelegate.h"
 @interface AppDelegateTests : XCTestCase
 @property (nonatomic, strong) AppDelegate *appDelegate;
+@property (nonatomic, strong) id mockWindow;
 @end
 
 @implementation AppDelegateTests
@@ -19,7 +21,7 @@
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     _appDelegate = [[AppDelegate alloc] init];
-    _appDelegate.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _mockWindow = [OCMockObject mockForClass:[UIWindow class]];
 }
 
 - (void)tearDown
@@ -30,9 +32,11 @@
 
 - (void)testShouldSetupRootTabControllerAfterLaunching
 {
+    [[_mockWindow expect] setRootViewController:OCMOCK_ANY];
+    [[_mockWindow expect] makeKeyAndVisible];
+    _appDelegate.window = _mockWindow;
 	[_appDelegate application:nil didFinishLaunchingWithOptions:nil];
-    
-    XCTAssertNotNil(_appDelegate.window.rootViewController, @"We should have a root view controller!");
+    XCTAssertNoThrow([_mockWindow verify], @"");
 }
 
 @end
