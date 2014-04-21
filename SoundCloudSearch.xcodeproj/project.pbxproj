@@ -12,7 +12,6 @@
 		08CE787019049FEF0096C157 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786F19049FEF0096C157 /* UIKit.framework */; };
 		08CE787619049FEF0096C157 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08CE787419049FEF0096C157 /* InfoPlist.strings */; };
 		08CE787819049FEF0096C157 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE787719049FEF0096C157 /* main.m */; };
-		08CE787C19049FEF0096C157 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE787B19049FEF0096C157 /* AppDelegate.m */; };
 		08CE788719049FEF0096C157 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CE788619049FEF0096C157 /* Images.xcassets */; };
 		08CE788E19049FEF0096C157 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE788D19049FEF0096C157 /* XCTest.framework */; };
 		08CE788F19049FEF0096C157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786B19049FEF0096C157 /* Foundation.framework */; };
@@ -22,7 +21,10 @@
 		08CE78A91904B3DD0096C157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786B19049FEF0096C157 /* Foundation.framework */; };
 		08CE78AA1904B3DD0096C157 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786F19049FEF0096C157 /* UIKit.framework */; };
 		08CE78B01904B3DD0096C157 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08CE78AE1904B3DD0096C157 /* InfoPlist.strings */; };
-		08CE78B21904B3DD0096C157 /* SoundCloudSearchLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE78B11904B3DD0096C157 /* SoundCloudSearchLogicTests.m */; };
+		08CE78BD1904B7610096C157 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE78BB1904B6DE0096C157 /* AppDelegateTests.m */; };
+		08CE78BE1904B7750096C157 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE787B19049FEF0096C157 /* AppDelegate.m */; };
+		08CE78BF1904B7800096C157 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE787B19049FEF0096C157 /* AppDelegate.m */; };
+		08CE78C01904B7800096C157 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE787B19049FEF0096C157 /* AppDelegate.m */; };
 		D21F7E9D7015464C8D21E31C /* libPods-SoundCloudSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B713CEDC42414416BA9AF4F5 /* libPods-SoundCloudSearchTests.a */; };
 		FC6085EAEDDF45C3B088BFE9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3536102E93B34F5194C8F38D /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -63,8 +65,8 @@
 		08CE78A71904B3DD0096C157 /* SoundCloudSearchLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCloudSearchLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CE78AD1904B3DD0096C157 /* SoundCloudSearchLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudSearchLogicTests-Info.plist"; sourceTree = "<group>"; };
 		08CE78AF1904B3DD0096C157 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		08CE78B11904B3DD0096C157 /* SoundCloudSearchLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCloudSearchLogicTests.m; sourceTree = "<group>"; };
 		08CE78B31904B3DD0096C157 /* SoundCloudSearchLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundCloudSearchLogicTests-Prefix.pch"; sourceTree = "<group>"; };
+		08CE78BB1904B6DE0096C157 /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateTests.m; sourceTree = "<group>"; };
 		3536102E93B34F5194C8F38D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1FA9C4C1FE4B9D9278B0B5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B713CEDC42414416BA9AF4F5 /* libPods-SoundCloudSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoundCloudSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,7 +187,7 @@
 		08CE78AB1904B3DD0096C157 /* SoundCloudSearchLogicTests */ = {
 			isa = PBXGroup;
 			children = (
-				08CE78B11904B3DD0096C157 /* SoundCloudSearchLogicTests.m */,
+				08CE78BB1904B6DE0096C157 /* AppDelegateTests.m */,
 				08CE78AC1904B3DD0096C157 /* Supporting Files */,
 			);
 			path = SoundCloudSearchLogicTests;
@@ -391,7 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08CE787C19049FEF0096C157 /* AppDelegate.m in Sources */,
+				08CE78C01904B7800096C157 /* AppDelegate.m in Sources */,
 				08CE787819049FEF0096C157 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CE78BF1904B7800096C157 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08CE78B21904B3DD0096C157 /* SoundCloudSearchLogicTests.m in Sources */,
+				08CE78BE1904B7750096C157 /* AppDelegate.m in Sources */,
+				08CE78BD1904B7610096C157 /* AppDelegateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
