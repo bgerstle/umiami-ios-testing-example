@@ -30,7 +30,9 @@
 
 - (void)testShouldSetupRootTabControllerAfterLaunching
 {
-    XCTFail(@"Implement me!");
+	[_appDelegate application:nil didFinishLaunchingWithOptions:nil];
+    
+    XCTAssertNotNil(_appDelegate.window.rootViewController, @"We should have a root view controller!");
 }
 
 @end
