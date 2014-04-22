@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SCHomeViewController.h"
+#import "SCSearchViewController.h"
 
 static BOOL scs_isApplicationUnderTest()
 {
@@ -38,6 +40,9 @@ static BOOL scs_isApplicationUnderTest()
     UITabBarController *rootTabController = nil;
     if (!scs_isApplicationUnderTest()) {
         rootTabController = [[UITabBarController alloc] init];
+        [rootTabController setViewControllers:@[[SCHomeViewController new],
+                                                [SCSearchViewController new]]
+                                     animated:NO];
         rootTabController.view.accessibilityIdentifier = @"root";
     }
     return [self initWithWindow:window rootViewController:rootTabController];

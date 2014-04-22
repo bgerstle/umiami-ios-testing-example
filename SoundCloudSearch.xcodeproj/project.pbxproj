@@ -27,6 +27,10 @@
 		08CE78C01904B7800096C157 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CE787B19049FEF0096C157 /* AppDelegate.m */; };
 		2B1FB9D0F7A74818900D4695 /* libPods-apptests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D40B0D915F264393B389671E /* libPods-apptests.a */; };
 		A8CABCD4E55E43E7865066BA /* libPods-logictests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EABEAB2F594460B2A37B32 /* libPods-logictests.a */; };
+		BCB99CAC1906E07200355E5D /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB99CA81906E07200355E5D /* SCHomeViewController.m */; };
+		BCB99CAD1906E07200355E5D /* SCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB99CAB1906E07200355E5D /* SCSearchViewController.m */; };
+		BCB99CAE1906E24B00355E5D /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB99CA81906E07200355E5D /* SCHomeViewController.m */; };
+		BCB99CAF1906E24B00355E5D /* SCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB99CAB1906E07200355E5D /* SCSearchViewController.m */; };
 		FC6085EAEDDF45C3B088BFE9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3536102E93B34F5194C8F38D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,10 @@
 		8B26F78D0F8A4B6791E1D6DE /* Pods-logictests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-logictests.xcconfig"; path = "Pods/Pods-logictests.xcconfig"; sourceTree = "<group>"; };
 		A741BE2AFE254AE598CDA1AD /* Pods-apptests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-apptests.xcconfig"; path = "Pods/Pods-apptests.xcconfig"; sourceTree = "<group>"; };
 		B713CEDC42414416BA9AF4F5 /* libPods-SoundCloudSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoundCloudSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB99CA71906E07200355E5D /* SCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHomeViewController.h; sourceTree = "<group>"; };
+		BCB99CA81906E07200355E5D /* SCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHomeViewController.m; sourceTree = "<group>"; };
+		BCB99CAA1906E07200355E5D /* SCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSearchViewController.h; sourceTree = "<group>"; };
+		BCB99CAB1906E07200355E5D /* SCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSearchViewController.m; sourceTree = "<group>"; };
 		D40B0D915F264393B389671E /* libPods-apptests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-apptests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +159,8 @@
 		08CE787119049FEF0096C157 /* SoundCloudSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BCB99CA61906E07200355E5D /* Home */,
+				BCB99CA91906E07200355E5D /* Search */,
 				08CE787A19049FEF0096C157 /* AppDelegate.h */,
 				08CE787B19049FEF0096C157 /* AppDelegate.m */,
 				08CE788619049FEF0096C157 /* Images.xcassets */,
@@ -204,6 +214,24 @@
 				08CE78B31904B3DD0096C157 /* SoundCloudSearchLogicTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCB99CA61906E07200355E5D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BCB99CA71906E07200355E5D /* SCHomeViewController.h */,
+				BCB99CA81906E07200355E5D /* SCHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BCB99CA91906E07200355E5D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BCB99CAA1906E07200355E5D /* SCSearchViewController.h */,
+				BCB99CAB1906E07200355E5D /* SCSearchViewController.m */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +457,8 @@
 			files = (
 				08CE78C01904B7800096C157 /* AppDelegate.m in Sources */,
 				08CE787819049FEF0096C157 /* main.m in Sources */,
+				BCB99CAD1906E07200355E5D /* SCSearchViewController.m in Sources */,
+				BCB99CAC1906E07200355E5D /* SCHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +476,8 @@
 			files = (
 				08CE78BE1904B7750096C157 /* AppDelegate.m in Sources */,
 				08CE78BD1904B7610096C157 /* AppDelegateTests.m in Sources */,
+				BCB99CAF1906E24B00355E5D /* SCSearchViewController.m in Sources */,
+				BCB99CAE1906E24B00355E5D /* SCHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

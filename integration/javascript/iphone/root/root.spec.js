@@ -15,4 +15,14 @@ test("should see root view and tabs after launching", function (target, app) {
 
   var homeTab = tabBar.find("button[label=Home]");
   assertTrue(homeTab.isValid(), "can't find home tab!");
+
+  searchTab.tap();
+  $.delay(0.1);
+  assertTrue(rootView.find("#search").isValid(),
+             "should see #search after tapping search button");
+
+  homeTab.tap();
+  $.delay(0.1);
+  assertTrue(rootView.find("#home").isValid(),
+             "should see #home after tapping home button");
 });
