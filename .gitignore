@@ -2,6 +2,7 @@
 *[cC]overage.info*
 coverage/
 coverage.zip
+integration/tmp/
 
 # OS X
 .DS_Store
