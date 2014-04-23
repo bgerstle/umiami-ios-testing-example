@@ -40,6 +40,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	self.trackListView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [self.view addSubview:self.trackListView];
     
     self.view.accessibilityIdentifier = @"home";
 }
