@@ -37,16 +37,25 @@ static BOOL scs_isApplicationUnderTest()
     window.backgroundColor = [UIColor blackColor];
     
     // Override point for customization after application launch.
-    UITabBarController *rootTabController = nil;
+    UIViewController *defaultRootViewController = nil;
     if (!scs_isApplicationUnderTest()) {
-        rootTabController = [[UITabBarController alloc] init];
-        [rootTabController setViewControllers:@[[SCHomeViewController new],
-                                                [SCSearchViewController new]]
-                                     animated:NO];
-        rootTabController.view.accessibilityIdentifier = @"root";
+		defaultRootViewController = [[self class] createDefaultRootViewController];
     }
-    return [self initWithWindow:window rootViewController:rootTabController];
+    return [self initWithWindow:window rootViewController:defaultRootViewController];
 }
+
++ (UIViewController*)createDefaultRootViewController
+{
+    UITabBarController *rootTabController = [[UITabBarController alloc] init];
+    SCHomeViewController *homeViewController = [SCHomeViewController new];
+    SCSearchViewController *searchViewController = [SCSearchViewController new];
+    [rootTabController setViewControllers:@[homeViewController, searchViewController]
+                                 animated:NO];
+    rootTabController.view.accessibilityIdentifier = @"root";
+    return rootTabController;
+}
+
+#pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
