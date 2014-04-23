@@ -60,27 +60,27 @@ static NSArray* scs_createDummyTracks(NSArray *dummyTrackTitles)
     
     NSArray *dummyTracks = scs_createDummyTracks(@[@"A", @"B"]);
     
-    // addition
+    // addition [] => [A, B]
     [tracksProxy addObjectsFromArray:dummyTracks];
     XCTAssertEqual([_homeViewController.trackListView numberOfRowsInSection:0], 2,
                    @"didn't update table after adding tracks");
     
-    // substitution
+    // substitution [A, B] => [C, B]
     NSDictionary *trackC = scs_createDummyTrackWithTitle(@"C");
     [tracksProxy replaceObjectAtIndex:0 withObject:trackC];
-    XCTAssertEqual([_homeViewController.trackListView numberOfRowsInSection:0], 1,
+    XCTAssertEqual([_homeViewController.trackListView numberOfRowsInSection:0], 2,
                    @"replacing should preserve number of rows.");
     UITableViewCell *trackCCell = [_homeViewController.trackListView cellForRowAtIndexPath:
                                    [NSIndexPath indexPathForRow:0 inSection:0]];
     XCTAssertEqualObjects(trackCCell.textLabel.text, @"C", @"Should be showing track C since we replaced A");
     
-    // deletion
-    [tracksProxy removeObjectAtIndex:1];
+    // deletion [C, B] => [B]
+    [tracksProxy removeObjectAtIndex:0];
     XCTAssertEqual([_homeViewController.trackListView numberOfRowsInSection:0], 1,
                    @"should only have 1 row after removing a track");
     UITableViewCell *trackBCell = [_homeViewController.trackListView cellForRowAtIndexPath:
                                    [NSIndexPath indexPathForRow:0 inSection:0]];
-    XCTAssertEqualObjects(trackBCell.textLabel.text, @"B", @"Should be showing track C since we removed B");
+    XCTAssertEqualObjects(trackBCell.textLabel.text, @"B", @"Should be showing track B since we removed C");
 }
 
 @end
