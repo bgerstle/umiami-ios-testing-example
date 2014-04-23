@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		080615B219075AEF0082BD07 /* SCHomeViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 080615B119075AEF0082BD07 /* SCHomeViewControllerTests.m */; };
+		080615B619075F510082BD07 /* NSIndexSet+NSIndexPathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 080615B519075F510082BD07 /* NSIndexSet+NSIndexPathUtils.m */; };
+		080615B819075F9C0082BD07 /* NSIndexSet+NSIndexPathUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 080615B719075F9C0082BD07 /* NSIndexSet+NSIndexPathUtilsTests.m */; };
+		080615BA19075FE50082BD07 /* NSIndexSet+NSIndexPathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 080615B519075F510082BD07 /* NSIndexSet+NSIndexPathUtils.m */; };
 		08CE786C19049FEF0096C157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786B19049FEF0096C157 /* Foundation.framework */; };
 		08CE786E19049FEF0096C157 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786D19049FEF0096C157 /* CoreGraphics.framework */; };
 		08CE787019049FEF0096C157 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786F19049FEF0096C157 /* UIKit.framework */; };
@@ -48,6 +51,9 @@
 /* Begin PBXFileReference section */
 		03EABEAB2F594460B2A37B32 /* libPods-logictests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-logictests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		080615B119075AEF0082BD07 /* SCHomeViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHomeViewControllerTests.m; sourceTree = "<group>"; };
+		080615B419075F510082BD07 /* NSIndexSet+NSIndexPathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+NSIndexPathUtils.h"; path = "Utilities/NSIndexSet+NSIndexPathUtils.h"; sourceTree = "<group>"; };
+		080615B519075F510082BD07 /* NSIndexSet+NSIndexPathUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSIndexSet+NSIndexPathUtils.m"; path = "Utilities/NSIndexSet+NSIndexPathUtils.m"; sourceTree = "<group>"; };
+		080615B719075F9C0082BD07 /* NSIndexSet+NSIndexPathUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+NSIndexPathUtilsTests.m"; sourceTree = "<group>"; };
 		08CE786819049FEF0096C157 /* SoundCloudSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CE786B19049FEF0096C157 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08CE786D19049FEF0096C157 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080615B319075F430082BD07 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				080615B419075F510082BD07 /* NSIndexSet+NSIndexPathUtils.h */,
+				080615B519075F510082BD07 /* NSIndexSet+NSIndexPathUtils.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		08CE785F19049FEF0096C157 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +176,7 @@
 		08CE787119049FEF0096C157 /* SoundCloudSearch */ = {
 			isa = PBXGroup;
 			children = (
+				080615B319075F430082BD07 /* Utilities */,
 				BCB99CA61906E07200355E5D /* Home */,
 				BCB99CA91906E07200355E5D /* Search */,
 				08CE787A19049FEF0096C157 /* AppDelegate.h */,
@@ -205,6 +221,7 @@
 			children = (
 				08CE78AC1904B3DD0096C157 /* Supporting Files */,
 				08CE78BB1904B6DE0096C157 /* AppDelegateTests.m */,
+				080615B719075F9C0082BD07 /* NSIndexSet+NSIndexPathUtilsTests.m */,
 			);
 			path = SoundCloudSearchLogicTests;
 			sourceTree = "<group>";
@@ -462,6 +479,7 @@
 				08CE787819049FEF0096C157 /* main.m in Sources */,
 				BCB99CAD1906E07200355E5D /* SCSearchViewController.m in Sources */,
 				BCB99CAC1906E07200355E5D /* SCHomeViewController.m in Sources */,
+				080615B619075F510082BD07 /* NSIndexSet+NSIndexPathUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,9 +497,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CE78BE1904B7750096C157 /* AppDelegate.m in Sources */,
+				080615B819075F9C0082BD07 /* NSIndexSet+NSIndexPathUtilsTests.m in Sources */,
 				08CE78BD1904B7610096C157 /* AppDelegateTests.m in Sources */,
 				BCB99CAF1906E24B00355E5D /* SCSearchViewController.m in Sources */,
 				BCB99CAE1906E24B00355E5D /* SCHomeViewController.m in Sources */,
+				080615BA19075FE50082BD07 /* NSIndexSet+NSIndexPathUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

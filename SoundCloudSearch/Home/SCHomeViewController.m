@@ -7,30 +7,11 @@
 //
 
 #import "SCHomeViewController.h"
+#import "NSIndexSet+NSIndexPathUtils.h"
 
 #define kTrackTableCellReuseID @"TrackTableCellReuseID"
 
 static void* const kTracksKVOContext = (void*)&kTracksKVOContext;
-
-@interface NSIndexSet (NSIndexPathUtil)
-
-- (NSArray*)asRowsOfIndexPathsInSection:(NSUInteger)section;
-
-@end
-
-@implementation NSIndexSet (NSIndexPathUtil)
-
-- (NSArray*)asRowsOfIndexPathsInSection:(NSUInteger)section
-{
-	NSMutableArray *indexPaths = [[NSMutableArray alloc] initWithCapacity:[self count]];
-    [self enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
-    	[indexPaths addObject:[NSIndexPath indexPathForRow:idx inSection:section]];
-    }];
-    return indexPaths;
-    
-}
-
-@end
 
 @interface SCHomeViewController ()
 <UITableViewDataSource, UITableViewDelegate>
