@@ -12,6 +12,7 @@
 {
     UITabBarItem *_tabBarItem;
 }
+@property (nonatomic, strong, readwrite) UITableView *trackListView;
 @end
 
 @implementation SCHomeViewController
@@ -20,7 +21,7 @@
 {
     self = [super init];
     if (self) {
-
+        // automatically get notified whenever our "tracks" object changes
     }
     return self;
 }
@@ -39,7 +40,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    
     self.view.accessibilityIdentifier = @"home";
 }
 

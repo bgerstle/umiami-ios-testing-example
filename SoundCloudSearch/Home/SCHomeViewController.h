@@ -10,4 +10,7 @@
 
 @interface SCHomeViewController : UIViewController
 
+@property (nonatomic, strong, readonly) UITableView *trackListView;
+@property (nonatomic, strong) NSMutableArray *tracks;
+
 @end

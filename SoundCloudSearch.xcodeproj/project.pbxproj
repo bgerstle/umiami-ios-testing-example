@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080615B219075AEF0082BD07 /* SCHomeViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 080615B119075AEF0082BD07 /* SCHomeViewControllerTests.m */; };
 		08CE786C19049FEF0096C157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786B19049FEF0096C157 /* Foundation.framework */; };
 		08CE786E19049FEF0096C157 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786D19049FEF0096C157 /* CoreGraphics.framework */; };
 		08CE787019049FEF0096C157 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CE786F19049FEF0096C157 /* UIKit.framework */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		03EABEAB2F594460B2A37B32 /* libPods-logictests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-logictests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		080615B119075AEF0082BD07 /* SCHomeViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHomeViewControllerTests.m; sourceTree = "<group>"; };
 		08CE786819049FEF0096C157 /* SoundCloudSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CE786B19049FEF0096C157 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08CE786D19049FEF0096C157 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,6 +185,7 @@
 		08CE789319049FEF0096C157 /* SoundCloudSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				080615B119075AEF0082BD07 /* SCHomeViewControllerTests.m */,
 				08CE789419049FEF0096C157 /* Supporting Files */,
 			);
 			path = SoundCloudSearchTests;
@@ -467,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CE78BF1904B7800096C157 /* AppDelegate.m in Sources */,
+				080615B219075AEF0082BD07 /* SCHomeViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
