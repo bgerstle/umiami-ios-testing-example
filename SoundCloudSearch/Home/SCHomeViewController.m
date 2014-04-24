@@ -54,6 +54,7 @@ static void* const kTracksKVOContext = (void*)&kTracksKVOContext;
     self.trackListView.delegate = self;
     self.trackListView.dataSource = self;
     [self.trackListView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTrackTableCellReuseID];
+    self.trackListView.allowsSelection = NO;
     [self.view addSubview:self.trackListView];
     
     self.view.accessibilityIdentifier = @"home";
@@ -92,7 +93,7 @@ static void* const kTracksKVOContext = (void*)&kTracksKVOContext;
 
 - (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return self.view.bounds.size.height / 4.f;
+    return 50.f;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

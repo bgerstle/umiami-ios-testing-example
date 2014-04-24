@@ -47,8 +47,16 @@ static BOOL scs_isApplicationUnderTest()
 + (UIViewController*)createDefaultRootViewController
 {
     UITabBarController *rootTabController = [[UITabBarController alloc] init];
+    
     SCHomeViewController *homeViewController = [SCHomeViewController new];
+    homeViewController.tracks = [@[@{@"title": @"Foo"},
+                                   @{@"title": @"Bar"},
+                                   @{@"title": @"Biz"},
+                                   @{@"title": @"Baz"},
+                                   @{@"title": @"Buz"}] mutableCopy];
+    
     SCSearchViewController *searchViewController = [SCSearchViewController new];
+    
     [rootTabController setViewControllers:@[homeViewController, searchViewController]
                                  animated:NO];
     rootTabController.view.accessibilityIdentifier = @"root";
