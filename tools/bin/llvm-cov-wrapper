@@ -1,0 +1,8 @@
+# Wraps llvm-cov to make it compatible with lcov (which tries to get the version using -v instead of --version)
+
+if [ "$1" = "-v" ]; then
+    echo "llvm-cov-wrapper 4.2.1"
+    exit 0
+else
+    /usr/bin/gcov $*
+fi
